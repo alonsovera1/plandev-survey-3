@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta - Proyecto My</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <header>
+        <h2>Encuesta</h2>
+    </header>
+
+    <main>
+        <div id="questionModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="question-container" id="questionContainer">
+                    <!-- Pregunta 1 -->
+                    <div class="question" id="question1">
+                        <p class="tittle-main">Realizaremos una breve encuesta para conocer tus intereses y conocimientos en diversas areas de la informatica<br>
+                            Las respuestas serán tratadas de manera confidencial.<br>
+                            Es importante que seas totalmente sincero en tus respuestas
+                            </p>
+                        <h2>¿Cual o cuales son las áreas de la informática de tu interés?</h2>
+                        <div class="option-buttons">
+                            <button class="option-card" data-value="gestor-proyectos">Gestor de Proyectos</button>
+                            <button class="option-card" data-value="analista-negocios">Analista de Negocios</button>
+                            <button class="option-card" data-value="scrum-master">Scrum Master</button>
+                            <button class="option-card" data-value="arquitecto-software">Arquitecto de Software</button>
+                            <button class="option-card" data-value="analista-software">Analista de Software</button>
+                            <button class="option-card" data-value="disenador-grafico">Diseñador Grafico (UX/UI)</button>
+                            <button class="option-card" data-value="marketing-digital">Especialista en Marketing Digital</button>
+                            <button class="option-card" data-value="copywriter">Copywriter</button>
+                            <button class="option-card" data-value="devops">DevOps</button>
+                            <button class="option-card" data-value="qa">Aseguramiente de calidad (QA)</button>
+                            <button class="option-card" data-value="ciberseguridad">Ciberseguridad</button>
+                            <button class="option-card" data-value="base-de-datos">Administrador de Base de Datos</button>
+                            <button class="option-card" data-value="redes">Administrador de Redes</button>
+                            <button class="option-card" data-value="tester">Tester</button>
+                            <button class="option-card" data-value="consultor-marketing">Consultor de Marketing</button>
+                            <button class="option-card" data-value="analista-comercial">Analista comercial</button>
+                            <button class="option-card" data-value="programador">Programador</button>
+                            <button class="option-card" data-value="otro">Otro</button>
+                            <input type="text" id="experienceFeedback" name="experienceFeedback" placeholder="Especifíca cuál otra...">
+                        </div>
+                    </div>
+                    <!-- Pregunta 2-->
+                    <div class="question" id="question2">
+                        <h2>¿Que áreas de la programación son de tu interes?</h2>
+                        <div class="option-buttons">
+                            <button class="option-card" data-value="desarrollo-web">Desarrollo Web</button>
+                            <button class="option-card" data-value="frontedn">Frontedn</button>
+                            <button class="option-card" data-value="backend">Backend</button>
+                            <button class="option-card" data-value="diseño_de_interfaces">Diseño de Interfaces (UX/UI)</button>
+                            <button class="option-card" data-value="apps-moviles">Desarrollo de Aplicaciones Móviles</button>
+                            <button class="option-card" data-value="apps-escritorio">Desarrollo de Aplicaciones de Escritorio</button>
+                            <button class="option-card" data-value="ciberseguridad">Ciberseguridad</button>
+                            <button class="option-card" data-value="bases-datos">Bases de Datos</button>
+                            <button class="option-card" data-value="inteligencia-artificial">Inteligencia Artificial</button>
+                            <button class="option-card" data-value="ciencia-datos">Ciencia de Datos</button>
+                            <button class="option-card" data-value="testing">Testing</button>
+                            <button class="option-card" data-value="devops">Devops</button>
+                            <button class="option-card" data-value="desarrollo_de_viedeojuegos">Desarrollo de Viedeojuegos</button>
+                            <button class="option-card" data-value="desarrollo-so">Desarrollo de Sistemas OperativosUX/UI)</button>
+                            <button class="option-card" data-value="realidad-virtual">Realidad Virtual</button>
+                            <button class="option-card" data-value="realidad-aumentada">Realidad Aumentada</button>
+                            <button class="option-card" data-value="blockchain">Blockchain</button>
+                            <button class="option-card" data-value="no-programacion">No me gusta la programación</button>
+                            <button class="option-card" data-value="otro-2">Otro</button>
+                            <input type="text" id="experienceFeedback" name="experienceFeedback" placeholder="Especifíca cuál otra...">
+                        </div>
+                    </div>
+                    <!-- Pregunta 3 -->
+                    <div class="question" id="question3">
+                        <h2>¿Cual es el nivel de conocimiento del area de informática de tu preferencia?</h2>
+                        <div class="option-buttons">
+                            <button class="option-card" data-value="basico">Básico</button>
+                            <button class="option-card" data-value="intermedio">Intermedio</button>
+                            <button class="option-card" data-value="avanzado">Avanzado</button>
+                        </div>
+                    </div>
+                    <!-- Pregunta 4-->
+                    <div class="question" id="question4">
+                        <h2>Indica que herramientas y lenguajes de programación conoces</h2>
+                        <div class="option-buttons">
+                            <button class="option-card" data-value="ingles">Ingles</button>
+                            <button class="option-card" data-value="git">Git</button>
+                            <button class="option-card" data-value="github ">GitHub </button>
+                            <button class="option-card" data-value="gitlab">GitLab</button>
+                            <button class="option-card" data-value="bitbucket">BitBucket</button>
+                            <button class="option-card" data-value="slack">Slack</button>
+                            <button class="option-card" data-value="linux">Linux</button>
+                            <button class="option-card" data-value="bash">Bash</button>
+                            <button class="option-card" data-value="wordpress">WordPress</button>
+                            <button class="option-card" data-value="wix">Wix</button>
+                            <button class="option-card" data-value="python">Python</button>
+                            <button class="option-card" data-value="django">Django</button>
+                            <button class="option-card" data-value="javascript">JavaScript</button>
+                            <button class="option-card" data-value="ract">Ract</button>
+                            <button class="option-card" data-value="vue">Vue</button>
+                            <button class="option-card" data-value="c++">C++</button>
+                            <button class="option-card" data-value="c#">C #</button>
+                            <button class="option-card" data-value="java">Java</button>
+                            <button class="option-card" data-value="swift">Swift</button>
+                            <button class="option-card" data-value="kotlin">Kotlin</button>
+                            <button class="option-card" data-value="objetive-c">Objetive-C</button>
+                            <button class="option-card" data-value="php">PHP</button>
+                            <button class="option-card" data-value="laravel">Laravel</button>
+                            <button class="option-card" data-value="go">Go</button>
+                            <button class="option-card" data-value="ruby">Ruby</button>
+                            <button class="option-card" data-value="r">R</button>
+                            <button class="option-card" data-value="dart">Dart</button>
+                            <button class="option-card" data-value="rust">Rust</button>
+                            <button class="option-card" data-value="sqlL">SQL</button>
+                            <button class="option-card" data-value="nosql">NoSQL</button>
+                            <button class="option-card" data-value="firebase">FireBase</button>
+                            <button class="option-card" data-value="aws">AWS</button>
+                            <button class="option-card" data-value="azure">Azure</button>
+                            <button class="option-card" data-value="digital-ocean">Digital Ocean</button>
+                            <button class="option-card" data-value="redes-informaticas">Redes informáticas</button>
+                            <button class="option-card" data-value="otro-2">Otro</button>
+                            <input type="text" id="experienceFeedback" name="experienceFeedback" placeholder="Especifíca cuál otra...">
+                        </div>
+                    </div>
+                    <!-- Pregunta 5 -->
+                    <div class="question" id="question5">
+                        <h2>¿Cuánto tiempo llevas estudiando estas tecnologías?
+                        </h2>
+                        <div class="option-buttons">
+                            <button class="option-card" data-value="1-mes">Hace 1 mes</button>
+                            <button class="option-card" data-value="6-meses">Hace 6 meses</button>
+                            <button class="option-card" data-value="1-año">Hace 1 año</button>
+                            <button class="option-card" data-value="Mas-1-año">Mas de 1 año</button>
+                        </div>
+                    </div>
+                    <!-- Pregunta 6 -->
+                    <div class="question" id="question6">
+                        <h2>¿Utilizas actualmente alguna herramienta o aplicación para la planificación o gestion de proyectos de software?</h2>
+                        <div class="option-buttons">
+                            <button class="option-card" data-value="Asana">Asana</button>
+                            <button class="option-card" data-value="Microsoft Project">Microsoft Project</button>
+                            <button class="option-card" data-value="Microsoft Planner">Microsoft Planner</button>
+                            <button class="option-card" data-value="Trello">Trello</button>
+                            <button class="option-card" data-value="Jira">Jira</button>
+                            <button class="option-card" data-value="Slack">Slack</button>
+                            <button class="option-card" data-value="Figma">Figma</button>
+                            <button class="option-card" data-value="ninguna">No utilizo ninguna</button>
+                            <button class="option-card" data-value="otro-3">Otro</button>
+                            <input type="text" id="improvementsFeedback" name="improvementsFeedback" placeholder="Especifíca cuál otra...">
+                        </div>
+                    </div>
+                    <!-- Pregunta 7 -->
+                    <div class="question" id="question7">
+                        <h2>¿Qué habilidades blandas dominas?</h2>
+                        <div class="option-buttons">
+                            <button class="option-card" data-value="Comunicación efectiva">Comunicación efectiva</button>
+                            <button class="option-card" data-value="Trabajo en equipo">Trabajo en equipo</button>
+                            <button class="option-card" data-value="Resolución de problemas">Resolución de problemas</button>
+                            <button class="option-card" data-value="Adaptabilidad y flexibilidad">Adaptabilidad y flexibilidad</button>
+                            <button class="option-card" data-value="Pensamiento critico">Pensamiento critico</button>
+                            <button class="option-card" data-value="Gestion del tiempo">Gestion del tiempo</button>
+                            <button class="option-card" data-value="Creatividad">Creatividad</button>
+                            <button class="option-card" data-value="Liderazgo">Liderazgo</button>
+                            <button class="option-card" data-value="Aprendizaje continuo">Aprendizaje continuo</button>
+                            <button class="option-card" data-value="otro-3">Otro</button>
+                            <input type="text" id="improvementsFeedback" name="improvementsFeedback" placeholder="Especifíca cuál otra...">
+                        </div>
+                    </div>
+                    <!-- Pregunta 8 -->
+                    <div class="question" id="question8">
+                        <h2>¿Cuales son tus proyecciones futuras en el campo de la informática?</h2>
+                        <div class="option-buttons">
+                            <button class="option-card" data-value="Trabajar para empresas">Trabajar para empresas</button>
+                            <button class="option-card" data-value="Trabajar de manera independiente para clientes (freelance)">Trabajar de manera independiente para clientes "freelance"</button>
+                            <button class="option-card" data-value="Crear proyectos personales">Crear proyectos personales</button>
+                            <button class="option-card" data-value="Otro tipo de trabajo que no esta relacionado con la informatica">Otro tipo de trabajo que no esta relacionado con la informatica</button>
+                            <button class="option-card" data-value="otro-3">Otro</button>
+                            <input type="text" id="improvementsFeedback" name="improvementsFeedback" placeholder="Especifíca cuál otra...">
+                        </div>
+                    </div>
+                    <!-- Pregunta 9 -->
+                    <div class="question" id="question9">
+                        <h2>¿Tienes experiencia en la creacion de algún proyecto de software?</h2>
+                        <div class="option-buttons">
+                            <button class="option-card" data-value="No tengo experiencia">No tengo experiencia</button>
+                            <button class="option-card" data-value="Poca experiencia">Poca experiencia</button>
+                            <button class="option-card" data-value="Media experiencia">Media experiencia</button>
+                            <button class="option-card" data-value="Mucha experiencia">Mucha experiencia</button>
+                            <button class="option-card" data-value="otro-3">Otro</button>
+                        </div>
+                    </div>
+                    <!-- Pregunta 10-->
+                    <div class="question" id="question10">
+                        <h2>¿Que metodologias de desarrollo conoces?</h2>
+                        <div class="option-buttons">
+                            <button class="option-card" data-value="Scrum">Scrum</button>
+                            <button class="option-card" data-value="Kanban">Kanban</button>
+                            <button class="option-card" data-value="Agile">Agile</button>
+                            <button class="option-card" data-value="XP (Programacion Extrema)">XP (Programacion Extrema)</button>
+                            <button class="option-card" data-value="DevOps">DevOps</button>
+                            <button class="option-card" data-value="Modelo en Cascada">Modelo en Cascada</button>
+                            <button class="option-card" data-value="Modelo en V">Modelo en V</button>
+                            <button class="option-card" data-value="Modelo Incremental">Modelo Incremental</button>
+                            <button class="option-card" data-value="Modelo en Espiral">Modelo en Espiral</button>
+                            <button class="option-card" data-value="Modelo de Prototipo">Modelo de Prototipo</button>
+                            <button class="option-card" data-value="RAD (Desarrollo Rapido de Aplicaciones)">RAD (Desarrollo Rapido de Aplicaciones)</button>
+                            <button class="option-card" data-value="RUP (Proceso Unificado Racional)">RUP (Proceso Unificado Racional)</button>
+                            <button class="option-card" data-value="Lean">Lean</button>
+                            <button class="option-card" data-value="FDD (Desarrollo dirigido por caracteristicas)">FDD (Desarrollo dirigido por caracteristicas)</button>
+                            <button class="option-card" data-value="TDD (Desarrollo Basado en Pruebas)">TDD (Desarrollo Basado en Pruebas)</button>
+                            <button class="option-card" data-value="BDD (Desarrollo Basado en Comportamiento)">BDD (Desarrollo Basado en Comportamiento)</button>
+                            <button class="option-card" data-value="ATDD (Desarrollo Basado en Aceptacion)">ATDD (Desarrollo Basado en Aceptacion)</button>
+                            <button class="option-card" data-value="DSDM (Metodo de Sistemas Dinámicos)">DSDM (Metodo de Sistemas Dinámicos)</button>
+                            <button class="option-card" data-value="SAFe (Marco Agil Escalado)">SAFe (Marco Agil Escalado)</button>
+                            <button class="option-card" data-value="ScrumBan">ScrumBan</button>
+                            <button class="option-card" data-value="No conozco ninguna">No conozco ninguna</button>
+                            <button class="option-card" data-value="otro-3">Otro</button>
+                            <input type="text" id="improvementsFeedback" name="improvementsFeedback" placeholder="Especifíca cuál otra...">
+                        </div>
+                    </div>
+                
+                    <!-- Pregunta 11-->
+                    <div class="question" id="question11">
+                        <h2>¿Has creado algun proyecto tomando como base las metodologias de desarrollo de software?</h2>
+                        <div class="option-buttons">
+                            <button class="option-card" data-value="si">Si</button>
+                            <button class="option-card" data-value="no">No</button>
+                            <input type="text" id="improvementsFeedback" name="improvementsFeedback" placeholder="Especifíca cuál otra...">
+                        </div>
+                    </div>
+                    <!-- Pregunta 12-->
+                    <div class="question" id="question12">
+                        <h2>¿Conoces alguna herramienta que ayude a planificar proyectos haciendo uso de las metodologias de desarrollo de software?</h2>
+                        <div class="option-buttons">
+                            <button class="option-card" data-value="si">Si</button>
+                            <button class="option-card" data-value="no">No</button>
+                            <input type="text" id="improvementsFeedback" name="improvementsFeedback" placeholder="Especifíca cuál...">
+                        </div>
+                    <!-- Pregunta 13-->
+                    <div class="question" id="question13">
+                        <h2>¿Crees que es dificil para una sola persona planificar proyectos de software?</h2>
+                        <div class="option-buttons">
+                            <button class="option-card" data-value="si">Si</button>
+                            <button class="option-card" data-value="no">No</button>
+                        </div>
+                    <!-- Pregunta 14-->
+                    <div class="question" id="question14">
+                        <h2>¿Crees que colaborar con los compañeros de estudio facilitará la planificacion de tus proyectos de software?</h2>
+                        <div class="option-buttons">
+                            <button class="option-card" data-value="si">Si</button>
+                            <button class="option-card" data-value="no">No</button>
+                        </div>
+                    </div>
+                    <!-- Pregunta 15-->
+                    <div class="question-last" id="question15">
+                        <h2>¿Crees que seria de utilidad una aplicacion web que te permita planificar proyectos de software con tus compañeros aplicando las metodologias de desarrollo de software?</h2>
+                        <div class="option-buttons">
+                            <button class="option-card" data-value="si">Si</button>
+                            <button class="option-card" data-value="no">No</button>
+                        </div>
+                    </div>
+                </div>
+                <button id="nextBtn">Siguiente</button>
+                <button id="submitBtn" style="display: none;">Enviar</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="survey.js"></script> <!-- Enlace al JavaScript de la encuesta -->
+</body>
+</html>
